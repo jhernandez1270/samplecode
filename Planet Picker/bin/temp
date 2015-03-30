@@ -1,0 +1,22 @@
+
+		String devMenuEnabled;
+
+	    	NodeList devMenuSettings = doc.getElementsByTagName("enableDevMenu");
+
+Node DevMenuNode = devMenuSettings.item(0);
+	   		System.out.println("DevMenuNode: " + DevMenuNode);
+	   		
+	   		
+	   		
+	   		
+	   		if(DevMenuNode == null){
+	   			devMenuEnabled = "false";
+	   		}else{
+	   			
+	   			devMenuEnabled = DevMenuNode.getTextContent();
+	   			System.out.println("dev menu is: " + devMenuEnabled);
+	   		}
+	   		
+	   		
+	   		
+	   		return devMenuEnabled;
